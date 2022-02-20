@@ -558,7 +558,6 @@ void EspMQTTClient::executeDelayed(const unsigned long delay, DelayedExecutionCa
 // Initiate a Wifi connection (non-blocking)
 void EspMQTTClient::connectToWifi()
 {
-  WiFi.mode(WIFI_STA);
   #ifdef ESP32
     WiFi.setHostname(_mqttClientName);
   #else
